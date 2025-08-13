@@ -1,0 +1,128 @@
+:root {
+  --primary: #D966FF
+}
+
+body {
+  margin: 16px;
+  background-color: black;
+  color: rgb(219, 219, 219);
+  font-family: "Red Hat Text";
+  font-weight: 500;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.1s ease-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+.logo {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.logo svg {
+  transition: fill 0.2s ease-out;
+  fill: white;
+}
+
+.logo:hover svg {
+  fill: var(--primary)
+}
+
+#block {
+  min-height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+#branding p {
+  max-width: 400px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 64px;
+}
+
+.outline {
+  outline-style: solid;
+  outline-color: lightslategray;
+  outline-width: 2px;
+}
+
+.metrics-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.disclaimers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.disclaimers p {
+  color: darkgray;
+  margin: 0px;
+  text-align: center;
+}
+
+.metrics {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 64px;
+  list-style: none;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+}
+
+.metric p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.metric .number {
+  font-family: "Red Hat Mono";
+  font-weight: 800;
+  font-size: large;
+}
+
+.link-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.link-row h1 {
+  font-family: 'Red Hat Mono';
+  font-weight: 600;
+  font-size: large;
+}
+
+.link-row li {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style: none;
+}
